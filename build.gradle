@@ -3,7 +3,7 @@ buildscript {
         springBootVersion = '1.5.4.RELEASE'
     }
     repositories {
-        mavenCentral()
+        maven { url 'http://repo1.maven.org/maven2' }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -73,6 +73,9 @@ dependencies {
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.10.Final'
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
     compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.10.Final'
+    // https://mvnrepository.com/artifact/commons-logging/commons-logging
+    compile group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
+
 }
 
 springBoot {
